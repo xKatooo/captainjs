@@ -97,7 +97,7 @@ class Console {
             let char = chars[i];
             let node = Color[Object.keys(Color)[i]];
             let regx = new RegExp(`§${char}`, 'gi');
-            str = str.replace(regx, node);
+            str = str.toString().replace(regx, node);
         }
         return str + "\x1b[0m";
     }
